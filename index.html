@@ -1,46 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mano Propia - Película Boliviana</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
+    <nav>
+        <div class="logo"></div>
+        <div class="menu">
+            <a href="#inicio">INICIO</a>
+            <a href="#sinopsis">SINOPSIS</a>
+            <a href="#trailer">TRAILER</a>
+            <a href="#entradas">ENTRADAS</a>
+        </div>
+    </nav>
     <header>
-        <img src="img/bolivia.png" alt="Logo Mano Propia" class="logo">
-        <h1>ESTRENO</h1>
+        <h1>MANO PROPIA</h1>
         <h2>Una película Boliviana del 2024</h2>
     </header>
     <main>
-        <section class="campaign">
-            <img src="img/manopropia.jpg" alt="Mano Propia" class="movie-poster">
-            <div class="synopsis">
-                <h3>Sinopsis</h3>
-                <p>Cinco jóvenes son acusados de haber robado un camión y, antes de que se inicie el proceso judicial, son secuestrados por un grupo de encapuchados y llevados a la plaza del pueblo, donde una turba enfurecida los amenaza con lincharlos.</p>
-            </div>
-        </section>
-        <section class="cta">
-            <a href="https://youtu.be/IlsEh5wqG-4?si=9R5S1DuVMZEE7gKb" target="_blank" class="cta-button">Ver Tráiler</a>
-        </section>
-        <section class="contact">
-            <h3>Compra tu Entrada</h3>
-            <form action="#" method="post" class="cinema-form">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="showtime">Horario:</label>
-                <select id="showtime" name="showtime">
-                    <option value="matinee">Matiné - 14:00</option>
-                    <option value="evening1">Noche - 19:00</option>
-                    <option value="evening2">Noche - 22:00</option>
-                </select>
-                <label for="seats">Número de Entradas:</label>
-                <input type="number" id="seats" name="seats" min="1" max="10" required>
-                <button type="submit">Comprar</button>
-            </form>
-        </section>
+        <section id="inicio" class="inicio">
+            <img src="img/manopropia.jpg" alt="Mano Propia" class="poster">
+            <section id="sinopsis" class="sinopsis">
+                <h1>SINOPSIS</h1>
+                <p>Cinco jóvenes son acusados de haber robado un camión y, antes de que se inicie el proceso judicial,
+                    son secuestrados por un grupo de encapuchados y llevados a la plaza del pueblo, donde una turba
+                    enfurecida los amenaza con lincharlos.</p>
+            </section>
+            <section id="trailer" class="trailer">
+                <a href="https://youtu.be/IlsEh5wqG-4?si=9R5S1DuVMZEE7gKb" target="_blank" class="trailer-button">Ver
+                    Tráiler</a>
+            </section>
+            <section id="entradas" class="entradas">
+                <h1>COMPRA TU ENTRADA</h1>
+                <form action="#" method="post" class="datos">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="horario">Horario:</label>
+                    <select id="horario" name="horario">
+                        <option value="matinee">Matiné - 14:00</option>
+                        <option value="evening1">Noche - 19:00</option>
+                        <option value="evening2">Noche - 22:00</option>
+                    </select>
+                    <label for="seats">Número de Entradas:</label>
+                    <input type="number" id="seats" name="seats" min="1" max="10" required>
+                    <button type="submit">Comprar</button>
+                </form>
+            </section>
     </main>
     <footer>
         <p>&copy; 2024. Todos los derechos reservados.</p>
@@ -51,4 +63,5 @@
         </div>
     </footer>
 </body>
+
 </html>
